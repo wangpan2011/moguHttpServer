@@ -1,4 +1,5 @@
 var restify = require('restify');
+var mongodb = require('./public/javascripts/models/mongodb');
 var marketer = require('./public/javascripts/marketer');
 var server = restify.createServer(
     {
@@ -7,8 +8,20 @@ var server = restify.createServer(
 );
 function start() {
   console.log("#### starting ####");
+  server.use(restify.gzipResponse());
   server.use(restify.bodyParser());
   server.use(restify.queryParser());
+  restify.defaultResponseHeaders = function (data) {
+    this.header('Access-Control-Allow-Origin', '*');
+  };
+
+  server.on('err', function (err) {
+    mongodb.mongoose.disconnect(function (err) {
+      console.log('mongoose was disconnected');
+    });
+    console.log('server has a error, and stoped');
+  });
+
   server.get('/hello/:name', function respond(req, res, next) {
     res.send('hello ' + req.params.name);
   }); //for test
