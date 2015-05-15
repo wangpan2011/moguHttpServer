@@ -1,6 +1,7 @@
 /**
  * Created by wangpan on 5/8/15.
  */
+//签到
 var Marketer = require('./../models/Marketers');
 exports.signin = function signin(req, res, next) {
 

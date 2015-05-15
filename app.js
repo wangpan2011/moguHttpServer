@@ -1,6 +1,7 @@
 var restify = require('restify');
-var mongodb = require('./public/javascripts/models/mongodb');
-var marketer = require('./public/javascripts/marketer');
+var mongodb = require('./public/models/mongodb');
+var marketer = require('./public/marketer');
+var login = require('./public/login');
 var server = restify.createServer(
     {
       name: "MarketNode"
@@ -25,7 +26,14 @@ function start() {
   server.get('/hello/:name', function respond(req, res, next) {
     res.send('hello ' + req.params.name);
   }); //for test
+
+  //签到
   server.post('/signin', marketer.signin);
+
+  //登录
+  server.post('/login', login.login);
+  server.del('/login', login.logout);
+
   server.listen(3900, function(){
     console.log('%s listening at %s', server.name, server.url);
   });
