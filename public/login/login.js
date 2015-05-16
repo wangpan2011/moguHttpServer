@@ -8,6 +8,17 @@
 var MemorySession = require('../cookie/memory_session');
 var User = require('../models/User');
 
+//User.remove({}, function(err){
+//    console.log('remove all users: err=' + err);
+//});
+//new User({
+//    name : 'wangpan',
+//    phoneNumber : '15652924953',
+//    password : 'xunlei'
+//}).save(function(err, data) {
+//        console.log('save user: err=' + err);
+//    });
+
 function login(req, res, next){
     User.findOne(
         {
