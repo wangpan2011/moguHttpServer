@@ -2,6 +2,7 @@ var restify = require('restify');
 var mongodb = require('./public/models/mongodb');
 var marketer = require('./public/marketer');
 var login = require('./public/login');
+var memorySession = require('./public/cookie/memory_session')
 var server = restify.createServer(
     {
       name: "MarketNode"
@@ -28,7 +29,7 @@ function start() {
   }); //for test
 
   //签到
-  server.post('/signin', marketer.signin);
+  server.post('/signin', memorySession.checkSession, marketer.signin);
 
   //登录
   server.post('/login', login.login);
