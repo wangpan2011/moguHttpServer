@@ -20,6 +20,7 @@ var User = require('../models/User');
 //    });
 
 function login(req, res, next){
+    console.log("login requested: phone=" + req.params.phone + ",passwd=" + req.params.passwd);
     User.findOne(
         {
             phoneNumber : req.params.phone,
