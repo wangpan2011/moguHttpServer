@@ -28,10 +28,10 @@ function createSID(pre) {
     return id;
 }
 
-var createSession = function(sID, userID) {
+var createSession = function(sID, user) {
     var session = {
         SID: sID,
-        userID : userID,
+        user : user,
         timestamp: new Date()
     }
     return session;
@@ -84,11 +84,11 @@ exports.getHeaderSID=function (req){
 }
 
 // description session start
-exports.startSession = function(req, res, callback, userID) {
+exports.startSession = function(req, res, callback, user) {
     var sID = exports.getHeaderSID(req);
     if (!sID || typeof _sessions[sID] == 'undefined') {
         sID = createSID();
-        _sessions[sID] = createSession(sID, userID);
+        _sessions[sID] = createSession(sID, user);
     }
     res.setHeader('Set-Cookie', ['sID=' + sID]);
     callback(sID);
@@ -100,7 +100,7 @@ exports.checkSession = function(req, res, next) {
         res.json(400, {errorCode : 1000, message : 'session失效'});
         return;
     }
-    req.sessionUserID = _sessions[sID].userID;
+    req.sessionUser = _sessions[sID].user;
     return next();
 }
 

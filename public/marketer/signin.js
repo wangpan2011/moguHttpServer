@@ -5,12 +5,15 @@
 var Marketer = require('./../models/Marketers');
 exports.signin = function signin(req, res, next) {
 
-    console.log("name=" + req.params.name);
-    console.log("phone=" + req.params.phone);
+    console.log("name=" + req.sessionUser.name);
+    console.log("phone=" + req.sessionUser.phoneNumber);
     console.log("req=" + req);
     new Marketer({
-        name : req.params.name,
-        phoneNumber : req.params.phone
+        name : req.sessionUser.name,
+        phoneNumber : req.sessionUser.phoneNumber,
+        community : req.params.community,
+        leaflet : req.params.leaflet,
+        signinDate : new Date()
     }).save(function(err, data) {
             if (err) {
                 res.send(err);

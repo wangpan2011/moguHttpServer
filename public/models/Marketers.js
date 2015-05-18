@@ -5,7 +5,10 @@ var mongoose = require('./mongodb').mongoose;
 var Schema = mongoose.Schema;
 var marketerSchema = new Schema({
     name : String,
-    phoneNumber : String
+    phoneNumber : String,
+    community : String,
+    leaflet : Number,
+    signinDate : Date
 });
 
 var marketer = mongoose.model('marketers', marketerSchema);

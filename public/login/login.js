@@ -38,7 +38,7 @@ function login(req, res, next){
                     res.json(200, {sessionID : sessionID, user : user});
                     return;
                 },
-                user._id
+                user
             );
 
         });
