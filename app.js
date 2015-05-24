@@ -24,16 +24,16 @@ function start() {
     console.log('server has a error, and stoped');
   });
 
-  server.get('/hello/:name', function respond(req, res, next) {
+  server.get('/market_api/hello/:name', function respond(req, res, next) {
     res.send('hello ' + req.params.name);
   }); //for test
 
   //签到
-  server.post('/signin', memorySession.checkSession, marketer.signin);
+  server.post('/market_api/signin', memorySession.checkSession, marketer.signin);
 
   //登录
-  server.post('/login', login.login);
-  server.del('/login', login.logout);
+  server.post('/market_api/login', login.login);
+  server.del('/market_api/login', login.logout);
 
   server.listen(3900, function(){
     console.log('%s listening at %s', server.name, server.url);
