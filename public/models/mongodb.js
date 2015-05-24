@@ -5,9 +5,9 @@ var mongoose = require('mongoose');
 var dbOptions = {
     db: {native_parser: true},
     server: {poolSize: 5},
-    replset: {rs_name: 'marketerdb_replset'}
-    //user: 'pppadmin',
-    //pass: 'qazwsxedc'
+    replset: {rs_name: 'marketerdb_replset'},
+    user: 'marketadmin',
+    pass: 'qweqwe'
 };
 
 //数据库链接错误处理
@@ -18,6 +18,6 @@ mongoose.connection.on('open', function () {
     console.info('数据库连接已经打开');
 });
 //链接数据库
-mongoose.connect('mongodb://localhost/marketers', dbOptions);
+mongoose.connect('mongodb://localhost/market', dbOptions);
 //mongoose.connect('mongodb://182.92.241.79:10000/ppparking0428', dbOptions);
 exports.mongoose = mongoose;
