@@ -13,6 +13,8 @@ exports.signin = function signin(req, res, next) {
         phoneNumber : req.sessionUser.phoneNumber,
         community : req.params.community,
         leaflet : req.params.leaflet,
+        location : req.params.location,
+        address : req.params.address,
         signinDate : new Date()
     }).save(function(err, data) {
             if (err) {

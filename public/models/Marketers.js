@@ -8,6 +8,8 @@ var marketerSchema = new Schema({
     phoneNumber : String,
     community : String,
     leaflet : Number,
+    location : Array,
+    address : String,
     signinDate : Date
 });
 
