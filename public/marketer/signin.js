@@ -15,6 +15,7 @@ exports.signin = function signin(req, res, next) {
         leaflet : req.params.leaflet,
         location : req.params.location,
         address : req.params.address,
+        remarks : req.params.remarks,
         signinDate : new Date()
     }).save(function(err, data) {
             if (err) {

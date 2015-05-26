@@ -10,6 +10,7 @@ var marketerSchema = new Schema({
     leaflet : Number,
     location : Array,
     address : String,
+    remarks : String,
     signinDate : Date
 });
 

@@ -7,7 +7,6 @@ console.log(counter.count());
 console.log(counter.count());
 
 var restify = require('restify');
-var promoterSingin = require('././signin');
 var server = restify.createServer();
 server.use(restify.bodyParser());//将post请求的body数据转化到req.params
 server.use(restify.queryParser());//将url？后的参数转化到req.params
