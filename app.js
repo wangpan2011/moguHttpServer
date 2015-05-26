@@ -2,6 +2,7 @@ var restify = require('restify');
 var mongodb = require('./public/models/mongodb');
 var marketer = require('./public/marketer');
 var login = require('./public/login');
+var query = require('./public/query');
 var memorySession = require('./public/cookie/memory_session')
 var server = restify.createServer(
     {
@@ -35,6 +36,9 @@ function start() {
   server.post('/market_api/login', login.login);
   server.del('/market_api/login', login.logout);
 
+  //查询
+  server.get('/market_api/userlist', query.queryAllUsers);
+  server.get('/market_api/signinrecords/:phone', query.querySigninRecords);
   server.listen(3900, function(){
     console.log('%s listening at %s', server.name, server.url);
   });
