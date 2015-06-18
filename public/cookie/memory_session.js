@@ -95,8 +95,13 @@ exports.startSession = function(req, res, callback, user) {
 }
 
 exports.checkSession = function(req, res, next) {
+    console.log("checkSession: req=" + req);
     var sID = exports.getHeaderSID(req);
+    console.log("sID=" + sID);
+    //console.log("_sessions[sID]=" + _sessions[sID]);
+    //console.log("new session(_sessions, sID).isExpired()=" + (new session(_sessions, sID).isExpired()));
     if (!sID || typeof _sessions[sID] == 'undefined' || new session(_sessions, sID).isExpired()) {
+        console.log("session失效");
         res.json(400, {errorCode : 1000, message : 'session失效'});
         return;
     }

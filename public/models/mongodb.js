@@ -17,6 +17,6 @@ mongoose.connection.on('open', function () {
     console.info('数据库连接已经打开');
 });
 //链接数据库
-mongoose.connect('mongodb://localhost:10086/market', dbOptions);
+mongoose.connect('mongodb://localhost:27017/market', dbOptions);
 //mongoose.connect('mongodb://182.92.241.79:10000/ppparking0428', dbOptions);
 exports.mongoose = mongoose;

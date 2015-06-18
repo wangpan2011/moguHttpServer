@@ -4,7 +4,6 @@
 /**
  * 登录
  */
-
 var MemorySession = require('../cookie/memory_session');
 var User = require('../models/User');
 

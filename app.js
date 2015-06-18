@@ -3,7 +3,8 @@ var mongodb = require('./public/models/mongodb');
 var marketer = require('./public/marketer');
 var login = require('./public/login');
 var query = require('./public/query');
-var memorySession = require('./public/cookie/memory_session')
+var memorySession = require('./public/cookie/memory_session');
+var cors = require('./public/cors');
 var server = restify.createServer(
     {
       name: "MarketNode"
@@ -25,20 +26,20 @@ function start() {
     console.log('server has a error, and stoped');
   });
 
-  server.get('/market_api/hello/:name', function respond(req, res, next) {
+  server.get('/market_api/hello/:name', cors.cors, function respond(req, res, next) {
     res.send('hello ' + req.params.name);
   }); //for test
 
   //签到
-  server.post('/market_api/signin', memorySession.checkSession, marketer.signin);
+  server.post('/market_api/signin', cors.cors, memorySession.checkSession, marketer.signin);
 
   //登录
-  server.post('/market_api/login', login.login);
-  server.del('/market_api/login', login.logout);
+  server.post('/market_api/login', cors.cors, login.login);
+  server.del('/market_api/login', cors.cors, login.logout);
 
   //查询
-  server.get('/market_api/userlist', query.queryAllUsers);
-  server.get('/market_api/signinrecords/:phone', query.querySigninRecords);
+  server.get('/market_api/userlist', cors.cors, query.queryAllUsers);
+  server.get('/market_api/signinrecords/:phone', cors.cors, query.querySigninRecords);
   server.listen(3900, function(){
     console.log('%s listening at %s', server.name, server.url);
   });
