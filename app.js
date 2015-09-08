@@ -41,6 +41,19 @@ function start() {
     res.send(200, {welcome: 'login options success'});
     //return next();
   });
+  server.post('/district_info', mogu.districtInfo);
+  server.opts('/district_info', cors.cors, function(req, res, next){
+    console.log("login请求 options");
+    res.send(200, {welcome: 'login options success'});
+    //return next();
+  });
+
+  server.post('/city_search', mogu.citySearch);
+  server.opts('/city_search', cors.cors, function(req, res, next){
+    console.log("city search");
+    res.send(200, {welcome: 'city search'});
+    //return next();
+  });
 
 
 

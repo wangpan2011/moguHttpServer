@@ -1,0 +1,17 @@
+{
+  "errorCode": 0,
+  "result": {
+    "curren_location": "北京，中国",
+    "near_by_hots": [
+      {
+        "hot_city": "巴黎,法国"
+      },
+      {
+        "hot_city": "罗马,意大利"
+      },
+      {
+        "hot_city": "东京,日本"
+      }
+    ]
+  }
+}

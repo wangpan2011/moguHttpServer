@@ -1,0 +1,9 @@
+{
+  "cityName": "巴黎",
+  "nickName": "Paris",
+  "isParent": true,
+  "isInPlace": false,
+  "childDistrict": ["巴黎", "波尔多", "卢瓦尔河谷", "尼斯", "马赛", "斯特拉斯堡", "巴黎", "波尔多", "卢瓦尔河谷", "尼斯", "马赛", "斯特拉斯堡"],
+  "filterCategory": ["观光", "美食", "交通", "必备"],
+  "filterTime": ["今天", "明天", "31日", "1日"]
+}
