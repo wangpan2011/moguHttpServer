@@ -54,6 +54,12 @@ function start() {
     res.send(200, {welcome: 'city search'});
     //return next();
   });
+  server.post('/search_tips', mogu.searchTips);
+  server.opts('/search_tips', cors.cors, function(req, res, next){
+    console.log("search_tips");
+    res.send(200, {welcome: 'search_tips'});
+    //return next();
+  });
 
 
 

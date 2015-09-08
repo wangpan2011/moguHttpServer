@@ -32,3 +32,9 @@ exports.citySearch = function citySearch(req, res, next) {
         res.send(JSON.parse(fs.readFileSync('./public/mogu/data/city_search.json', 'utf8')));
     }, delayTime);
 }
+exports.searchTips = function searchTips(req, res, next) {
+    console.log("request searchTips: " + req );
+    setTimeout(function() {
+        res.send(JSON.parse(fs.readFileSync('./public/mogu/data/search_tips.json', 'utf8')));
+    }, delayTime);
+}
