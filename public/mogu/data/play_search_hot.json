@@ -1,0 +1,28 @@
+{
+  "errorCode": 0,
+  "result": {
+    "play_search_hot_array": [
+      {
+        "hot_item_tips": "景点门票"
+      },
+      {
+        "hot_item_tips": "观光旅游"
+      },
+      {
+        "hot_item_tips": "交通接驳"
+      },
+      {
+        "hot_item_tips": "迪斯尼"
+      },
+      {
+        "hot_item_tips": "富士山"
+      },
+      {
+        "hot_item_tips": "浅草寺"
+      },
+      {
+        "hot_item_tips": "东京银座"
+      }
+    ]
+  }
+}

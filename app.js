@@ -60,6 +60,12 @@ function start() {
     res.send(200, {welcome: 'search_tips'});
     //return next();
   });
+  server.post('/play_search_hot', mogu.playSearchHot);
+  server.opts('/play_search_hot', cors.cors, function(req, res, next){
+    console.log("play_search_hot");
+    res.send(200, {welcome: 'play_search_hot'});
+    //return next();
+  });
 
 
 

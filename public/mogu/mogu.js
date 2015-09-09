@@ -38,3 +38,9 @@ exports.searchTips = function searchTips(req, res, next) {
         res.send(JSON.parse(fs.readFileSync('./public/mogu/data/search_tips.json', 'utf8')));
     }, delayTime);
 }
+exports.playSearchHot = function playSearchHot(req, res, next) {
+    console.log("request searchTips: " + req );
+    setTimeout(function() {
+        res.send(JSON.parse(fs.readFileSync('./public/mogu/data/play_search_hot.json', 'utf8')));
+    }, delayTime);
+}
