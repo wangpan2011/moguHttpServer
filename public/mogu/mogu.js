@@ -44,3 +44,9 @@ exports.playSearchHot = function playSearchHot(req, res, next) {
         res.send(JSON.parse(fs.readFileSync('./public/mogu/data/play_search_hot.json', 'utf8')));
     }, delayTime);
 }
+exports.monthPrice = function monthPrice(req, res, next) {
+    console.log("request monthPrice: " + req );
+    setTimeout(function() {
+        res.send(JSON.parse(fs.readFileSync('./public/mogu/data/month_price.json', 'utf8')));
+    }, delayTime);
+}

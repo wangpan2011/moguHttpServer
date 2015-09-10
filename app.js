@@ -66,6 +66,12 @@ function start() {
     res.send(200, {welcome: 'play_search_hot'});
     //return next();
   });
+  server.post('/month_price', mogu.monthPrice);
+  server.opts('/month_price', cors.cors, function(req, res, next){
+    console.log("month_price");
+    res.send(200, {welcome: 'month_price'});
+    //return next();
+  });
 
 
 
