@@ -72,6 +72,12 @@ function start() {
     res.send(200, {welcome: 'month_price'});
     //return next();
   });
+  server.post('/priceByDay', mogu.priceByDay);
+  server.opts('/priceByDay', cors.cors, function(req, res, next){
+    console.log("priceByDay");
+    res.send(200, {welcome: 'priceByDay'});
+    //return next();
+  });
 
 
 

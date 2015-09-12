@@ -52,3 +52,10 @@ exports.monthPrice = function monthPrice(req, res, next) {
         res.send(result);
     }, delayTime);
 }
+exports.priceByDay = function priceByDay(req, res, next) {
+    console.log("request priceByDay: " + req );
+    var result = JSON.parse(fs.readFileSync('./public/mogu/data/priceByDay.json', 'utf8'));
+    setTimeout(function() {
+        res.send(result);
+    }, delayTime);
+}

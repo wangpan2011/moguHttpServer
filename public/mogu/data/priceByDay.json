@@ -1,0 +1,105 @@
+{
+  "errorCode": 0,
+  "result": [
+    {
+      "code": "US",
+      "title": "环球影城",
+      "description": "1张环球影城1日门票，迈阿密酒店接送前往奥兰多，6小时自由游览主题公园 <br><strong>产品在出发3天前可退，至少需两人才能预订此产品</strong> ",
+      "priceInfo": [
+        {
+          "sortOrder": 1,
+          "ageBands": [
+            {
+              "id": null,
+              "code": "US-1",
+              "bandId": 1,
+              "name": null,
+              "description": "成人",
+              "ageFrom": 12,
+              "ageTo": 99,
+              "treatAsAdult": null,
+              "price": 1172,
+              "minPersonNum": 1,
+              "maxPersonNum": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "IOA",
+      "title": "冒险岛",
+      "description": "1张环球影城冒险岛1日门票，迈阿密酒店接送前往奥兰多，6小时自由游览主题公园 <br><strong>产品在出发3天前可退，至少需两人才能预订此产品</strong>",
+      "priceInfo": [
+        {
+          "sortOrder": 1,
+          "ageBands": [
+            {
+              "id": null,
+              "code": "IOA-1",
+              "bandId": 1,
+              "name": null,
+              "description": "成人",
+              "ageFrom": 12,
+              "ageTo": 99,
+              "treatAsAdult": null,
+              "price": 1172,
+              "minPersonNum": 1,
+              "maxPersonNum": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SW",
+      "title": "海洋世界",
+      "description": "1张奥兰多海洋世界1日门票，迈阿密酒店接送前往奥兰多，6小时自由游览主题公园 <br><strong>产品在出发3天前可退，至少需两人才能预订此产品</strong>",
+      "priceInfo": [
+        {
+          "sortOrder": 1,
+          "ageBands": [
+            {
+              "id": null,
+              "code": "SW-1",
+              "bandId": 1,
+              "name": null,
+              "description": "成人",
+              "ageFrom": 12,
+              "ageTo": 99,
+              "treatAsAdult": null,
+              "price": 1172,
+              "minPersonNum": 1,
+              "maxPersonNum": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WNW",
+      "title": "水上世界",
+      "description": "1张潮野奥兰多水上乐园1日门票，迈阿密酒店接送前往奥兰多，6小时自由游览主题公园 <br><strong>产品在出发3天前可退，至少需两人才能预订此产品</strong>",
+      "priceInfo": [
+        {
+          "sortOrder": 1,
+          "ageBands": [
+            {
+              "id": null,
+              "code": "WNW-1",
+              "bandId": 1,
+              "name": null,
+              "description": "成人",
+              "ageFrom": 12,
+              "ageTo": 99,
+              "treatAsAdult": null,
+              "price": 1172,
+              "minPersonNum": 1,
+              "maxPersonNum": 9
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
