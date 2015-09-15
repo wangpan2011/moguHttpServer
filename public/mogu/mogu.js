@@ -1,5 +1,5 @@
 var fs = require('fs');
-delayTime = 1000;
+delayTime = 0;
 exports.test = function test(req, res, next) {
     console.log("request test");
     res.send(
@@ -55,6 +55,13 @@ exports.monthPrice = function monthPrice(req, res, next) {
 exports.priceByDay = function priceByDay(req, res, next) {
     console.log("request priceByDay: " + req );
     var result = JSON.parse(fs.readFileSync('./public/mogu/data/priceByDay.json', 'utf8'));
+    setTimeout(function() {
+        res.send(result);
+    }, delayTime);
+}
+exports.orderSubmit = function orderSubmit(req, res, next) {
+    console.log("request orderSubmit: " + req );
+    var result = JSON.parse(fs.readFileSync('./public/mogu/data/orderSubmit.json', 'utf8'));
     setTimeout(function() {
         res.send(result);
     }, delayTime);

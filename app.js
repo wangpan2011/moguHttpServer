@@ -78,6 +78,12 @@ function start() {
     res.send(200, {welcome: 'priceByDay'});
     //return next();
   });
+  server.post('/orderSubmit', mogu.orderSubmit);
+  server.opts('/orderSubmit', cors.cors, function(req, res, next){
+    console.log("orderSubmit");
+    res.send(200, {welcome: 'orderSubmit'});
+    //return next();
+  });
 
 
 
