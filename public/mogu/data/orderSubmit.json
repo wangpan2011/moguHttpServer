@@ -91,6 +91,68 @@
                 "displayOrder": 1,
                 "field_type": 3,
                 "is_required": 1
+              },
+              {
+                "displayOrder": 1,
+                "field_type": 2,
+                "is_required": 1
+              },
+              {
+                "displayOrder": 1,
+                "field_type": 4,
+                "is_required": 1
+              },
+              {
+                "displayOrder": 1,
+                "field_type": 5,
+                "is_required": 1
+              },
+              {
+                "displayOrder": 1,
+                "field_type": 6,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 7,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 8,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 9,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 10,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 11,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 12,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 13,
+                "is_required": 1
               }
             ]
           },
