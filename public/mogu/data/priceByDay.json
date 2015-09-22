@@ -25,7 +25,7 @@
             {
               "id": null,
               "code": "US-1",
-              "bandId": 1,
+              "bandId": 2,
               "name": null,
               "description": "老人",
               "ageFrom": 60,
@@ -38,7 +38,7 @@
             {
               "id": null,
               "code": "US-1",
-              "bandId": 1,
+              "bandId": 2,
               "name": null,
               "description": "儿童",
               "ageFrom": 12,
@@ -51,7 +51,7 @@
             {
               "id": null,
               "code": "US-1",
-              "bandId": 1,
+              "bandId": 2,
               "name": null,
               "description": "婴儿",
               "ageFrom": 1,
