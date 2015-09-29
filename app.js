@@ -26,7 +26,12 @@ function start() {
     headers: ['X-Requested-With', 'content-type', 'cookie', 'Set-Cookie', 'accept'] // sets expose-headers
   }));
 
+  server.post('/test', mogu.test);
   server.get('/test/:name', mogu.test);
+  server.post('/test/:name', mogu.test);
+  server.opts('/test/:name', cors.cors, function(req, res, next){
+    res.send(200, {welcome: "test opts"});
+  });
 
   server.post('/homepage', mogu.homepage);
   server.opts('/homepage', cors.cors, function(req, res, next){
@@ -82,6 +87,18 @@ function start() {
   server.opts('/orderSubmit', cors.cors, function(req, res, next){
     console.log("orderSubmit");
     res.send(200, {welcome: 'orderSubmit'});
+    //return next();
+  });
+  server.post('/orderSubmit2', mogu.orderSubmit2);
+  server.opts('/orderSubmit2', cors.cors, function(req, res, next){
+    console.log("orderSubmit2");
+    res.send(200, {welcome: 'orderSubmit2'});
+    //return next();
+  });
+  server.post('/productDetail', mogu.productDetail);
+  server.opts('/productDetail', cors.cors, function(req, res, next){
+    console.log("productDetail");
+    res.send(200, {welcome: 'productDetail'});
     //return next();
   });
 

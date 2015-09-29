@@ -1,0 +1,194 @@
+{
+  "errorCode": 0,
+  "result": {
+    "bookingInfos": [
+      {
+        "cancellable": 1,
+        "productCodeExt": "1000749276",
+        "gradeCodeExt": "DEFAULT",
+        "gradeName": "",
+        "travelDate": "2015-09-09",
+        "isOfferHotelPickup": "1",
+        "questionList": [
+          {
+            "title": "Passenger Weights",
+            "subTitle": "(e.g. 127 pounds, 145 kilos, etc)",
+            "message": "For safety reasons you must enter the weight of all passengers. Please indicate pounds or kilos.",
+            "isRequired": "1",
+            "fieldType": 10,
+            "id": "23"
+          },
+          {
+            "title": "Passenger Heights",
+            "subTitle": "(eg. 5'2\", 158cm etc)",
+            "message": "For safety reasons you must enter the height of all passengers. Please indicate inches or centimetres.",
+            "isRequired": "0",
+            "fieldType": 12,
+            "id": "2"
+          },
+          {
+            "title": "Disembarkation Time",
+            "subTitle": "(eg. 8pm, 20:30 etc)",
+            "message": "Enter your disembarkation time. Please indicate AM/PM or use the 24-hour clock.",
+            "isRequired": "1",
+            "id": "16"
+          },
+          {
+            "title": "Passport Number",
+            "subTitle": "(e.g. 0123456789. If multiple passengers, separate each entry e.g. 0123456789, 9876543210)",
+            "message": "Enter passport number for all passengers",
+            "isRequired": "1",
+            "fieldType": 7,
+            "id": "5"
+          },
+          {
+            "title": "Departure Flight No",
+            "subTitle": "(e.g. UA 864, BA 923, QA 233, etc)",
+            "message": "Enter your flight number.",
+            "isRequired": "1",
+            "id": "10"
+          },
+          {
+            "title": "Passport Expiry Date",
+            "subTitle": " \t(e.g. 15 September 2015. If multiple passengers, separate each entry e.g. 01 July 2012, 31 May 2014)",
+            "message": "Enter passport expiry date for all passengers",
+            "isRequired": "1",
+            "fieldType": 8,
+            "id": "3"
+          },
+          {
+            "title": "Passport Nationality",
+            "subTitle": "(e.g. United States of America. If multiple passengers, separate each entry e.g. Australia, China)",
+            "message": "Enter country of issue of passport for all passengers",
+            "isRequired": "1",
+            "fieldType": 9,
+            "id": "4"
+          },
+          {
+            "title": "Departure Time",
+            "subTitle": "(eg. 8pm, 20:30 etc)",
+            "message": "Enter your departure time. Please indicate AM/PM or use the 24-hour clock.",
+            "isRequired": "1",
+            "id": "15"
+          }
+        ],
+        "travellers": [
+          {
+            "skuCode": "DEFAULT-1",
+            "bandId": 1,
+            "bandName": "成人",
+            "ageFrom": "0",
+            "ageTo": "99",
+            "nums": 2,
+            "price": 197,
+            "fieldsNeeded": [
+              {
+                "displayOrder": 1,
+                "field_type": 1,
+                "is_required": 1
+              },
+              {
+                "displayOrder": 1,
+                "field_type": 3,
+                "is_required": 1
+              },
+              {
+                "displayOrder": 1,
+                "field_type": 2,
+                "is_required": 1
+              },
+              {
+                "displayOrder": 1,
+                "field_type": 4,
+                "is_required": 1
+              },
+              {
+                "displayOrder": 1,
+                "field_type": 5,
+                "is_required": 1
+              },
+              {
+                "displayOrder": 1,
+                "field_type": 6,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 7,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 8,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 9,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 10,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 11,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 12,
+                "is_required": 1
+              }
+            ,
+              {
+                "displayOrder": 1,
+                "field_type": 13,
+                "is_required": 1
+              }
+            ]
+          },
+          {
+            "skuCode": "DEFAULT-1",
+            "bandId": 2,
+            "bandName": "儿童",
+            "ageFrom": "0",
+            "ageTo": "99",
+            "nums": 1,
+            "price": 197,
+            "fieldsNeeded": [
+              {
+                "displayOrder": 1,
+                "field_type": 1,
+                "is_required": 1
+              },
+              {
+                "displayOrder": 1,
+                "field_type": 3,
+                "is_required": 1
+              },
+              {
+                "displayOrder": 1,
+                "field_type": 9,
+                "is_required": 1
+              }
+            ]
+          }
+        ],
+        "price": 394
+      }
+    ],
+    "totalPrice": 3456.7,
+    "currency": "CNY",
+    "currencyCode": "￥",
+    "orderNo": "orderNo_test"
+  }
+}
