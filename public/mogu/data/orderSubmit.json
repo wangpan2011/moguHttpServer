@@ -25,51 +25,6 @@
             "isRequired": "0",
             "fieldType": 12,
             "id": "2"
-          },
-          {
-            "title": "Disembarkation Time",
-            "subTitle": "(eg. 8pm, 20:30 etc)",
-            "message": "Enter your disembarkation time. Please indicate AM/PM or use the 24-hour clock.",
-            "isRequired": "1",
-            "id": "16"
-          },
-          {
-            "title": "Passport Number",
-            "subTitle": "(e.g. 0123456789. If multiple passengers, separate each entry e.g. 0123456789, 9876543210)",
-            "message": "Enter passport number for all passengers",
-            "isRequired": "1",
-            "fieldType": 7,
-            "id": "5"
-          },
-          {
-            "title": "Departure Flight No",
-            "subTitle": "(e.g. UA 864, BA 923, QA 233, etc)",
-            "message": "Enter your flight number.",
-            "isRequired": "1",
-            "id": "10"
-          },
-          {
-            "title": "Passport Expiry Date",
-            "subTitle": " \t(e.g. 15 September 2015. If multiple passengers, separate each entry e.g. 01 July 2012, 31 May 2014)",
-            "message": "Enter passport expiry date for all passengers",
-            "isRequired": "1",
-            "fieldType": 8,
-            "id": "3"
-          },
-          {
-            "title": "Passport Nationality",
-            "subTitle": "(e.g. United States of America. If multiple passengers, separate each entry e.g. Australia, China)",
-            "message": "Enter country of issue of passport for all passengers",
-            "isRequired": "1",
-            "fieldType": 9,
-            "id": "4"
-          },
-          {
-            "title": "Departure Time",
-            "subTitle": "(eg. 8pm, 20:30 etc)",
-            "message": "Enter your departure time. Please indicate AM/PM or use the 24-hour clock.",
-            "isRequired": "1",
-            "id": "15"
           }
         ],
         "travellers": [
@@ -82,31 +37,6 @@
             "nums": 2,
             "price": 197,
             "fieldsNeeded": [
-              {
-                "displayOrder": 1,
-                "field_type": 1,
-                "is_required": 1
-              },
-              {
-                "displayOrder": 1,
-                "field_type": 3,
-                "is_required": 1
-              },
-              {
-                "displayOrder": 1,
-                "field_type": 2,
-                "is_required": 1
-              },
-              {
-                "displayOrder": 1,
-                "field_type": 4,
-                "is_required": 1
-              },
-              {
-                "displayOrder": 1,
-                "field_type": 5,
-                "is_required": 1
-              },
               {
                 "displayOrder": 1,
                 "field_type": 6,
@@ -130,30 +60,7 @@
                 "field_type": 9,
                 "is_required": 1
               }
-            ,
-              {
-                "displayOrder": 1,
-                "field_type": 10,
-                "is_required": 1
-              }
-            ,
-              {
-                "displayOrder": 1,
-                "field_type": 11,
-                "is_required": 1
-              }
-            ,
-              {
-                "displayOrder": 1,
-                "field_type": 12,
-                "is_required": 1
-              }
-            ,
-              {
-                "displayOrder": 1,
-                "field_type": 13,
-                "is_required": 1
-              }
+
             ]
           },
           {
