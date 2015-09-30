@@ -7,64 +7,64 @@
       "type": "destination",
       "id": 1232441,
       "title": "巴黎",
-      "subTitle": "Parisa",
-      "img": "http://101.200.185.40:8000/app/imgs/roma.png"
+      "subTitle": "Paris",
+      "img": "http://101.200.185.40:8000/app/imgs/homepage1.png"
     },
     {
       "type": "destination",
       "id": 1232441,
       "title": "香港",
       "subTitle": "Paris",
-      "img": "http://101.200.185.40:8000/app/imgs/roma.png"
+      "img": "http://101.200.185.40:8000/app/imgs/homepage2.png"
     },
     {
       "type": "destination",
       "id": 1232441,
       "title": "纽约",
       "subTitle": "Paris",
-      "img": "http://101.200.185.40:8000/app/imgs/roma.png"
+      "img": "http://101.200.185.40:8000/app/imgs/homepage3.png"
     },
     {
       "type": "destination",
       "id": 1232441,
       "title": "东京",
       "subTitle": "Paris",
-      "img": "http://101.200.185.40:8000/app/imgs/roma.png"
+      "img": "http://101.200.185.40:8000/app/imgs/homepage4.png"
     },
     {
       "type": "destination",
       "id": 1232441,
-      "title": "泰安",
+      "title": "新加坡",
       "subTitle": "Paris",
-      "img": "http://101.200.185.40:8000/app/imgs/roma.png"
+      "img": "http://101.200.185.40:8000/app/imgs/homepage1.png"
     },
     {
       "type": "destination",
       "id": 1232441,
-      "title": "山东",
+      "title": "巴塞罗那",
       "subTitle": "Paris",
-      "img": "http://101.200.185.40:8000/app/imgs/roma.png"
+      "img": "http://101.200.185.40:8000/app/imgs/homepage2.png"
     },
     {
       "type": "product",
       "id": 1232441,
       "title": "巴黎三日游",
       "subTitle": "xxx",
-      "img": "http://101.200.185.40:8000/app/imgs/roma.png"
+      "img": "http://101.200.185.40:8000/app/imgs/homepage3.png"
     },
     {
       "type": "order",
       "id": 1232441,
       "title": "你的订单",
       "subTitle": "xxx",
-      "img": "http://101.200.185.40:8000/app/imgs/roma.png"
+      "img": "http://101.200.185.40:8000/app/imgs/homepage4.png"
     },
     {
       "type": "topic",
       "id": 1232441,
       "title": "推荐专题",
       "subTitle": "xxx",
-      "img": "http://101.200.185.40:8000/app/imgs/roma.png"
+      "img": "http://101.200.185.40:8000/app/imgs/homepage1.png"
     }
   ]
 }
