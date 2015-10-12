@@ -7,6 +7,7 @@
       "type": "destination",
       "id": 1232441,
       "title": "巴黎",
+      "departurePlace": "欧洲>法国>法兰西岛区>巴黎",
       "subTitle": "Paris",
       "img": "http://101.200.185.40:8000/app/imgs/homepage1.png"
     },
@@ -14,6 +15,7 @@
       "type": "destination",
       "id": 1232441,
       "title": "香港",
+      "departurePlace": "亚洲>中国>香港特别行政区>香港",
       "subTitle": "Paris",
       "img": "http://101.200.185.40:8000/app/imgs/homepage2.png"
     },
@@ -21,6 +23,7 @@
       "type": "destination",
       "id": 1232441,
       "title": "纽约",
+      "departurePlace": "北美洲>美国>纽约州>纽约市",
       "subTitle": "Paris",
       "img": "http://101.200.185.40:8000/app/imgs/homepage3.png"
     },
@@ -28,6 +31,7 @@
       "type": "destination",
       "id": 1232441,
       "title": "东京",
+      "departurePlace": "亚洲>日本>关东>东京",
       "subTitle": "Paris",
       "img": "http://101.200.185.40:8000/app/imgs/homepage4.png"
     },
@@ -35,6 +39,7 @@
       "type": "destination",
       "id": 1232441,
       "title": "新加坡",
+      "departurePlace": "亚洲>新加坡",
       "subTitle": "Paris",
       "img": "http://101.200.185.40:8000/app/imgs/homepage1.png"
     },
@@ -42,6 +47,7 @@
       "type": "destination",
       "id": 1232441,
       "title": "巴塞罗那",
+      "departurePlace": "欧洲>西班牙>巴塞罗那",
       "subTitle": "Paris",
       "img": "http://101.200.185.40:8000/app/imgs/homepage2.png"
     },
@@ -49,6 +55,7 @@
       "type": "product",
       "id": 1232441,
       "title": "巴黎三日游",
+      "departurePlace": "欧洲>西班牙>巴塞罗那",
       "subTitle": "xxx",
       "img": "http://101.200.185.40:8000/app/imgs/homepage3.png"
     },
@@ -56,6 +63,7 @@
       "type": "order",
       "id": 1232441,
       "title": "你的订单",
+      "departurePlace": "欧洲>西班牙>巴塞罗那",
       "subTitle": "xxx",
       "img": "http://101.200.185.40:8000/app/imgs/homepage4.png"
     },
@@ -63,6 +71,7 @@
       "type": "topic",
       "id": 1232441,
       "title": "推荐专题",
+      "departurePlace": "欧洲>西班牙>巴塞罗那",
       "subTitle": "xxx",
       "img": "http://101.200.185.40:8000/app/imgs/homepage1.png"
     }
