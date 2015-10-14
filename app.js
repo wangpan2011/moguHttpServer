@@ -34,6 +34,7 @@ function start() {
   });
 
   server.post('/homepage', mogu.homepage);
+  server.get('/homepage', mogu.homepage);
   server.opts('/homepage', cors.cors, function(req, res, next){
     console.log("login请求 options");
     res.send(200, {welcome: 'login options success'});
